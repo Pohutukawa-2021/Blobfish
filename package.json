@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Friday team challenge 1308",
   "main": "index.js",
-  
   "scripts": {
     "start": "node index",
     "dev": "nodemon index --ignore data.json",
@@ -24,15 +23,13 @@
     "url": "https://github.com/Pohutukawa-2021/Blobfish/issues"
   },
   "homepage": "https://github.com/Pohutukawa-2021/Blobfish#readme",
-
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^4.0.4"
-  },  
+  },
   "devDependencies": {
     "eslint": "7.9.0",
     "eslint-config-eda": "0.1.4",
     "nodemon": "^2.0.12"
   }
-
 }
