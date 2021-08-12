@@ -12,3 +12,13 @@ test('GET / returns correct response', (done) => {
         done()
     }) 
 })
+
+test('GET /tips returns the tips page', (done) => {
+    request(server)
+    .get('/tips') // get tips page
+    .expect(200) //response code
+    .end((err, res) => {
+        expect(err).toBeNull() //expect no error
+        expect(res.text).toMatch() // to match whatever content is written on the tips page
+        done()
+})
