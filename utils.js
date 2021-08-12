@@ -1,4 +1,5 @@
-const fs = required('fs')
-const path = required('path')
+const fs = require('fs')
+const path = require('path')
 
 module.exports = {}
+
