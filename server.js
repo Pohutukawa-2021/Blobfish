@@ -1,7 +1,7 @@
 const express = require('express')
 const fs = require('fs')
 const path = require('path')
-const {} = require('./utils')
+const { getData } = require('./utils')
 const server = express()
 const blobFish = require('./routes')
 const hbs = require('express-handlebars')
