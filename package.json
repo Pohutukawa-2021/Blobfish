@@ -10,6 +10,9 @@
     "lint": "eslint .",
     "test": "jest --watchAll"
   },
+  "eslintConfig": {
+    "extends": "eda"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Pohutukawa-2021/Blobfish.git"
@@ -24,8 +27,12 @@
 
   "dependencies": {
     "express": "^4.17.1",
-    "nodemon": "^2.0.12"
+    "express-handlebars": "^4.0.4"
   },  
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "7.9.0",
+    "eslint-config-eda": "0.1.4",
+    "nodemon": "^2.0.12"
+  }
 
 }
