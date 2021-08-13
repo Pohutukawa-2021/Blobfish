@@ -23,12 +23,16 @@ server.get('/:page', (req, res) => {
             res.status(500).send(err.message)
             return
         }
+        let randomNumber = Math.floor(Math.random())
         if(searchPage === 1) {
-            msg = data.allMessage[0].message[0]
+            const messageRandomNumber = randomNumber * (data.allMessage[0].message.length-1)
+            msg = data.allMessage[0].message[messageRandomNumber]
         } else if(searchPage === 2) {
-            msg = data.allMessage[1].message[0]
+            const messageRandomNumber = randomNumber * (data.allMessage[1].message.length-1)
+            msg = data.allMessage[1].message[messageRandomNumber]
         } else if(searchPage === 3) {
-            msg = data.allMessage[2].message[0]
+            const messageRandomNumber = randomNumber * (data.allMessage[2].message.length-1)
+            msg = data.allMessage[2].message[messageRandomNumber]
         }
         const viewData = {msg}
         console.log(viewData)
