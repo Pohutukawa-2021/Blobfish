@@ -21,7 +21,7 @@ server.get('/:page', (req, res) => {
             res.status(500).send(err.message)
             return
         }
-        const page = (req.params.page)
+        const searchPage = data.allMessage.find(text => (req.params.page)
         const viewData = {page}
         res.render('message', viewData)
     })
