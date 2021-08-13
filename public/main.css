@@ -1,32 +1,34 @@
 body {
+    align-items: center;
     background-color: #F0F7EE;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .container {
+    display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .app {
 display: flex;
 color: #776871;
-align-content: center;
-
+flex-direction: column;
+margin-left: 40%;
 }
 
 .title {
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-align-items: center;
 color: #776871;
+margin-left: 50%;
 
 }
 
-.img-circle {
+img {margin-top: 150px;
     border-radius: 50%;
-    object-fit: cover;
-    width: 500px;
-    height: 500px;
+    object-fit:cover;
+    width: 200px;
+    height: 200px;
 }
 
 .nav {
