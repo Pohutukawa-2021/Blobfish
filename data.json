@@ -1,6 +1,7 @@
 {
     "allMessage" : [
         {
+            "id": 1,
             "name": "Tips",
             "message": ["Think before you code", 
                         "Test your code!", 
@@ -11,6 +12,7 @@
         },
 
         {
+            "id": 2,
             "name": "Positive",
             "message": [
                 "It always seems impossible until it is done", 
@@ -23,6 +25,7 @@
         },
 
         {
+            "id": 3,
             "name": "Funny",
             "message": [
                 "What did the shark say when he ate the clownfish? This tastes a little funny",
