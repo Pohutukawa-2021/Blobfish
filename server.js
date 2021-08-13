@@ -21,7 +21,7 @@ server.get('/:page', (req, res) => {
             res.status(500).send(err.message)
             return
         }
-        const searchPage = data.allMessage.find(text => (req.params.page)
+        const searchPage = data.allMessage.find(text => (req.params.page))
         const viewData = {page}
         res.render('message', viewData)
     })
@@ -34,8 +34,10 @@ server.get('/', (req, res) => {
             res.status(500).send('getting data Error')
             return
         }
-        const viewData = {data}
-        res.render('home', viewData)
+        let elemPath = data.allMessage.map(elem => elem.path)
+        console.log(elemPath)
+        const viewData = {elemPath}
+        res.render('home', viewData.elemPath)
     })
 })
 
