@@ -16,13 +16,22 @@ server.engine('hbs', hbs({ extname: 'hbs' }))
 server.set('view engine', 'hbs')
 
 server.get('/:page', (req, res) => {
+    const searchPage = Number(req.params.page)
+    let msg = ""
     getData((err, data) => {
         if(err) {
             res.status(500).send(err.message)
             return
         }
-        const searchPage = data.allMessage.find(text => (req.params.page))
-        const viewData = {page}
+        if(searchPage === 1) {
+            msg = data.allMessage[0].message[0]
+        } else if(searchPage === 2) {
+            msg = data.allMessage[1].message[0]
+        } else if(searchPage === 3) {
+            msg = data.allMessage[2].message[0]
+        }
+        const viewData = {msg}
+        console.log(viewData)
         res.render('message', viewData)
     })
 })
