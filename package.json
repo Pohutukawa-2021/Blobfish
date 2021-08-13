@@ -25,7 +25,7 @@
   "homepage": "https://github.com/Pohutukawa-2021/Blobfish#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^4.0.4",
+    "express-handlebars": "^4.0.4"
   },
   "devDependencies": {
     "jest": "^27.0.6",
