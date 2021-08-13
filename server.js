@@ -44,9 +44,10 @@ server.get('/', (req, res) => {
             return
         }
         let elemPath = data.allMessage.map(elem => elem.path)
-        console.log(elemPath)
         const viewData = {elemPath}
-        res.render('home', viewData.elemPath)
+        res.render('home', viewData)
+        console.log(viewData)
+
     })
 })
 

@@ -1,5 +1,7 @@
 <div class="container">
-  <a href="#" class="img-cirle">Tips</a>
-  <a href="#" class="img-cirle">Positives</a>
-  <a href="#" class="img-cirle">Funny</a>
+  {{#each elemPath}}
+    <div class="options-list">
+    <a href="#"> <img class="img-cirle"  src="{{this}}"></a>
+    </div>
+    {{/each}}
 </div>

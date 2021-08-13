@@ -11,6 +11,7 @@ body {
 .app {
 display: flex;
 color: #776871;
+align-content: center;
 
 }
 
