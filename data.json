@@ -1,24 +1,34 @@
 {
-    "tips": [
+    "tips": {
+        "message": [
         "Think before you code", 
         "Test your code!", 
         "Get good sleep",
          "Comment your code", 
          "Develop your soft skills"
         ],
-    "positive":[
-        "It always seems impossible until it is done", 
-        "The happiness of your life depends upon the quality of your thoughts",
-        "You are never too old to set another goal or dream a new dream",
-        "Success is the sum of small efforts repeated day in and day out",
-        "Believe you can and you\re halfway there"
-    ],
-    "funny":[
-        "What did the shark say when he ate the clownfish? This tastes a little funny",
-        "Q. How did the programmer die in the shower? A. He read the shampoo bottle instructions: Lather. Rinse. Repeat",
-        "Q. Why did the programmer quit his job? A. Because he didn\t get arrays",
-        "A programmer is just a tool, which transforms caffeine into code.",
-        "Why was the computer scientist very upset when his computer got affected by a virus? Because it was a terminal illness!"
+        "path": "tips.jpg"
+    },
 
-    ]
+    "positive": {
+        "message":[
+            "It always seems impossible until it is done", 
+            "The happiness of your life depends upon the quality of your thoughts",
+            "You are never too old to set another goal or dream a new dream",
+            "Success is the sum of small efforts repeated day in and day out",
+            "Believe you can and you\re halfway there"
+        ],
+        "path": "positive.jpg"
+    },
+
+    "funny": {
+        "message" :[
+            "What did the shark say when he ate the clownfish? This tastes a little funny",
+            "Q. How did the programmer die in the shower? A. He read the shampoo bottle instructions: Lather. Rinse. Repeat",
+            "Q. Why did the programmer quit his job? A. Because he didn\t get arrays",
+            "A programmer is just a tool, which transforms caffeine into code.",
+            "Why was the computer scientist very upset when his computer got affected by a virus? Because it was a terminal illness!"   
+        ],
+        "path": "funny.jpg"
+    }
 }
