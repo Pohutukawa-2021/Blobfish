@@ -34,8 +34,9 @@ server.get('/:page', (req, res) => {
             const messageRandomNumber = randomNumber * (data.allMessage[2].message.length-1)
             msg = data.allMessage[2].message[messageRandomNumber]
         }
-        const viewData = {msg}
-        console.log(viewData)
+        const viewData = {
+          msg
+        }
         res.render('message', viewData)
     })
 })
@@ -47,10 +48,12 @@ server.get('/', (req, res) => {
             res.status(500).send('getting data Error')
             return
         }
-        let elemPath = data.allMessage.map(elem => elem.path)
-        const viewData = {elemPath}
+
+        const viewData = {
+          data
+        }
+
         res.render('home', viewData)
-        console.log(viewData)
 
     })
 })
