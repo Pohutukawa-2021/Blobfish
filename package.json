@@ -25,11 +25,13 @@
   "homepage": "https://github.com/Pohutukawa-2021/Blobfish#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^4.0.4"
+    "express-handlebars": "^4.0.4",
   },
   "devDependencies": {
+    "jest": "^27.0.6",
     "eslint": "7.9.0",
     "eslint-config-eda": "0.1.4",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "supertest": "^6.1.5"
   }
 }
